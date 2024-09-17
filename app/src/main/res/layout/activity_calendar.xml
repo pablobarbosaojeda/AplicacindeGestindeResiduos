@@ -1,7 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-</LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Calendario de Reciclaje"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:paddingBottom="16dp" />
+
+<CalendarView
+android:id="@+id/calendarView"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" />
+
+    <!-- Botón para marcar reciclaje -->
+<Button
+android:id="@+id/buttonMarkRecycle"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Marcar reciclaje"
+android:layout_marginTop="16dp" />
+
+    <!-- Botón para añadir recordatorio -->
+<Button
+android:id="@+id/buttonAddReminder"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Añadir recordatorio"
+android:layout_marginTop="8dp" />
+
+    </LinearLayout>
