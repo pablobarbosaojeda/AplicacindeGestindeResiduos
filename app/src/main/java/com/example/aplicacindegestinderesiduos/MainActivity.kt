@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         val buttonStatistics: Button = findViewById(id.btnStatistics)
 
         buttonRecycle.setOnClickListener {
-            val intent = Intent(this, RecycleActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, RecycleActivity::class.java)
+            //startActivity(intent)
         }
 
         buttonCalendar.setOnClickListener {
@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         buttonStatistics.setOnClickListener {
-            val intent = Intent(this, StatisticsActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, StatisticsActivity::class.java)
+            //startActivity(intent)
             }
         }
 }
