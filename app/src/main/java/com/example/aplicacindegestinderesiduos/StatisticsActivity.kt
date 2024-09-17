@@ -1,7 +1,6 @@
-package com.example.aplicacindegestinderesiduos.ui.theme
+package com.example.aplicacindegestinderesiduos
 
 import android.os.Bundle
-import android.service.autofill.OnClickAction
 import androidx.appcompat.app.AppCompatActivity
 
 class StatisticsActivity : AppCompatActivity(){
