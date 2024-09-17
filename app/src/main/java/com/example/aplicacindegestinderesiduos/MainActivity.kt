@@ -16,6 +16,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import com.example.aplicacindegestinderesiduos.R.*
+import com.example.aplicacindegestinderesiduos.ui.theme.StatisticsActivity
 
 class MainActivity : AppCompatActivity() {
 
