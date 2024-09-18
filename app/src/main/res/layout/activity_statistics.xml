@@ -6,18 +6,36 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/tvStatisticsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tus Estadísticas de Residuos"
+        android:text="Estadísticas de Residuos"
         android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
         android:gravity="center" />
 
-    <!-- Aquí podrías agregar un gráfico o estadísticas -->
+    <!-- Custom view for the pie chart -->
+    <View
+        android:id="@+id/viewPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
     <TextView
-        android:id="@+id/tvStatistics"
+        android:id="@+id/tvRecycled"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Has reciclado 10 kg de plástico este mes."
+        android:text="Residuos reciclados: 0 kg"
         android:textSize="18sp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvNonRecycled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Residuos no reciclados: 0 kg"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
 </LinearLayout>
