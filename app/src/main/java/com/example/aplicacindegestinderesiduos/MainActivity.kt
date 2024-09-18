@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import com.example.aplicacindegestinderesiduos.R.*
+import com.example.aplicacindegestinderesiduos.StatisticsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,19 +17,23 @@ class MainActivity : AppCompatActivity() {
         val buttonCalendar: Button = findViewById(id.btnCalendar)
         val buttonStatistics: Button = findViewById(id.btnStatistics)
 
+        // Manejar el clic del botón para abrir el mapa
         buttonRecycle.setOnClickListener {
-            //val intent = Intent(this, RecycleActivity::class.java)
-            //startActivity(intent)
+            // Navegar a la actividad del mapa (implementa MapActivity)
+            // val intent = Intent(this, MapActivity::class.java)
+            // startActivity(intent)
         }
 
+        // Manejar el clic del botón para abrir el calendario
         buttonCalendar.setOnClickListener {
             val intent = Intent(this, CalendarActivity::class.java)
             startActivity(intent)
         }
 
+        // Manejar el clic del botón para abrir las estadísticas
         buttonStatistics.setOnClickListener {
-            //val intent = Intent(this, StatisticsActivity::class.java)
-            //startActivity(intent)
-            }
+            val intent = Intent(this, StatisticsActivity::class.java)
+            startActivity(intent)
         }
+    }
 }

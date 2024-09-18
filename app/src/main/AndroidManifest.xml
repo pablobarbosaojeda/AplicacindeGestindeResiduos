@@ -1,34 +1,42 @@
-<application
-    android:allowBackup="true"
-    android:dataExtractionRules="@xml/data_extraction_rules"
-    android:fullBackupContent="@xml/backup_rules"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:roundIcon="@mipmap/ic_launcher_round"
-    android:supportsRtl="true"
-    android:theme="@style/Theme.AplicaciónDeGestiónDeResiduos"
-    tools:targetApi="31">
-    <activity
-        android:name=".StatisticsActivity"
-        android:exported="false" />
-    <activity
-        android:name=".CalendarActivity"
-        android:exported="false"
-        android:label="@string/title_activity_calendar"
-        android:theme="@style/Theme.AplicaciónDeGestiónDeResiduos" />
-    <activity
-        android:name=".MapActivity"
-        android:exported="false"
-        android:label="@string/title_activity_map"
-        android:theme="@style/Theme.AplicaciónDeGestiónDeResiduos" />
-    <activity
-        android:name=".MainActivity"
-        android:exported="true"
+ <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AplicaciónDeGestiónDeResiduos">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</application>
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplicacionDeGestionDeResiduos"
+        tools:targetApi="31">
+
+        <!-- MainActivity: la actividad principal de la aplicación -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AplicacionDeGestionDeResiduos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- CalendarActivity: actividad para el calendario -->
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false"
+            android:label="@string/title_activity_calendar"
+            android:theme="@style/Theme.AplicacionDeGestionDeResiduos" />
+
+        <!-- StatisticsActivity: actividad para las estadísticas -->
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_statistics"
+            android:theme="@style/Theme.AplicacionDeGestionDeResiduos" />
+
+        <!-- Otras actividades que se necesiten pueden ser añadidas aquí -->
+
+    </application>
+
+</manifest>

@@ -1,5 +1,6 @@
 package com.example.aplicacindegestinderesiduos
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,7 +12,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.aplicacindegestinderesiduos.ui.theme.AplicaciónDeGestiónDeResiduosTheme
 import android.widget.Button
 import android.widget.CalendarView
 import android.widget.Toast
@@ -21,6 +21,7 @@ class CalendarActivity : AppCompatActivity() {
 
     private var selectedDate: String = ""
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendar)
