@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
 
     <TextView
         android:id="@+id/tvStatisticsTitle"
@@ -13,15 +14,8 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp"
-        android:gravity="center" />
-
-    <!-- Custom view for the pie chart -->
-    <View
-        android:id="@+id/viewPieChart"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@android:color/white"
-        android:layout_marginBottom="16dp"/>
+        android:gravity="center"
+        android:textColor="@color/primaryColor" />
 
     <TextView
         android:id="@+id/tvRecycled"
@@ -29,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Residuos reciclados: 0 kg"
         android:textSize="18sp"
+        android:textColor="@color/textColorPrimary"
         android:layout_marginTop="16dp" />
 
     <TextView
@@ -37,5 +32,6 @@
         android:layout_height="wrap_content"
         android:text="Residuos no reciclados: 0 kg"
         android:textSize="18sp"
+        android:textColor="@color/textColorPrimary"
         android:layout_marginTop="8dp" />
 </LinearLayout>
