@@ -41,6 +41,9 @@
 
         <!-- Otras actividades que se necesiten pueden ser añadidas aquí -->
 
+        <meta-data
+            android:name="com.mapbox.token"
+            android:value="TU_TOKEN_DE_ACCESO_AQUI"/>
     </application>
 
 </manifest>
