@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Aplicación de Gestión de Residuos</string>
     <string name="title_activity_calendar">CalendarActivity</string>
-    <string name="title_activity_statistics" />
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="title_activity_map">MapActivity</string>
 </resources>

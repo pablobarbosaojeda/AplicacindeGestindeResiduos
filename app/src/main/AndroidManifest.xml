@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AplicacionDeGestionDeResiduos"
         tools:targetApi="31">
 
-        <!-- MainActivity: la actividad principal de la aplicación -->
+        <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -25,22 +25,25 @@
             </intent-filter>
         </activity>
 
-        <!-- CalendarActivity: actividad para el calendario -->
+        <!-- CalendarActivity -->
         <activity
             android:name=".CalendarActivity"
             android:exported="false"
             android:label="@string/title_activity_calendar"
             android:theme="@style/Theme.AplicacionDeGestionDeResiduos" />
 
-        <!-- StatisticsActivity: actividad para las estadísticas -->
+        <!-- StatisticsActivity -->
         <activity
             android:name=".StatisticsActivity"
             android:exported="false"
             android:label="@string/title_activity_statistics"
             android:theme="@style/Theme.AplicacionDeGestionDeResiduos" />
 
-        <!-- Otras actividades que se necesiten pueden ser añadidas aquí -->
-
+        <!-- MapActivity: actividad para ver el mapa -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.AplicacionDeGestionDeResiduos" />
     </application>
-
 </manifest>

@@ -1,11 +1,14 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
+    <!-- Título de Bienvenida -->
     <TextView
         android:id="@+id/textGreeting"
         android:layout_width="wrap_content"
@@ -20,6 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <!-- Card para Calendario -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardCalendar"
         android:layout_width="match_parent"
@@ -56,6 +60,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- Card para el Mapa -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardMap"
         android:layout_width="match_parent"
@@ -92,6 +97,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- Card para las Estadísticas -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardStatistics"
         android:layout_width="match_parent"

@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import com.example.aplicacindegestinderesiduos.R.*
-import com.example.aplicacindegestinderesiduos.StatisticsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,9 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         // Manejar el clic del botón para abrir el mapa
         buttonRecycle.setOnClickListener {
-            // Navegar a la actividad del mapa (implementa MapActivity)
-            // val intent = Intent(this, MapActivity::class.java)
-            // startActivity(intent)
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
         }
 
         // Manejar el clic del botón para abrir el calendario
