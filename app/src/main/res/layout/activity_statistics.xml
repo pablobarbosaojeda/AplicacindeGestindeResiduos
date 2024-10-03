@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/tvStatisticsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas de Residuos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textColor="@color/primaryColor" />
+
+    <TextView
+        android:id="@+id/tvRecycled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Residuos reciclados: 0 kg"
+        android:textSize="18sp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvNonRecycled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Residuos no reciclados: 0 kg"
+        android:textSize="18sp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
